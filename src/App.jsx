@@ -1,12 +1,17 @@
+import { Post } from './Post'
+import { Header } from './components/Header'
+
+import './global.css'
 
 
-
-function App() {
+export  function App() {
 
 
   return (
-    <h1>mayonaise</h1>
+    <div>
+    <Header/>
+    </div>
   )
 }
 
-export default App
+
