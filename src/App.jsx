@@ -7,6 +7,7 @@ import { Sidebar } from './components/Sidebar'
 import { Post } from './components/Post'
 
 
+
 export  function App() {
 
 
@@ -27,6 +28,7 @@ export  function App() {
         <Post
          author="Athena"
          content="puyjtpyolijmtpoyjum optyjmoptj mp"/>
+   
 
       </main>
     </div>
