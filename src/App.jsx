@@ -5,6 +5,7 @@ import styles from './App.module.css'
 import './global.css'
 import { Sidebar } from './components/Sidebar'
 import { Post } from './components/Post'
+import { Posts } from './utils/PostsContent'
 
 
 
@@ -21,13 +22,15 @@ export  function App() {
       </aside>
       <main>
 
-        <Post
-         author="Kahuna"
-         content="asdbakijs bdakis dbaskodjbaksd jbas dbjasl dbas das"
-        />
-        <Post
-         author="Athena"
-         content="puyjtpyolijmtpoyjum optyjmoptj mp"/>
+        {Posts.map(post =>{
+          return(
+          <Post
+          author={post.author}
+          content={post.content}
+          publishedAt={post.publishedAt}          
+          />)
+        })}
+     
    
 
       </main>
